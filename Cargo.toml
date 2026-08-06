@@ -1,0 +1,27 @@
+[package]
+name = "waggle"
+authors = ["João Oliveira <hello@jxs.pt>", "Daniel Knopik <daniel@dknopik.de>"]
+categories = ["network-programming", "asynchronous"]
+description = "Waggle protocol implementation"
+edition = "2024"
+keywords = ["peer-to-peer", "libp2p", "networking", "gossip"]
+license = "MIT"
+repository = "https://github.com/sigp/waggle"
+version = "0.1.0"
+
+[build-dependencies]
+prost-build = "0.14"
+protox = "0.9"
+
+[dependencies]
+async-channel = "2.5.0"
+asynchronous-codec = "0.7"
+bytes = "1"
+futures = "0.3"
+libp2p = "0.56.0"
+lru = "0.18.2"
+prost = "0.14"
+prost-codec = { git = "https://github.com/libp2p/rust-libp2p" }
+rand = "0.10"
+thiserror = "2.0.20"
+tracing = "0.1"
